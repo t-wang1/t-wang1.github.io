@@ -11,12 +11,6 @@ author_profile: true
   * [SBU Theta Tau](https://thetatausbu.com/)
 * Community 501(c)3 Nonprofit
   * [The City Tutors](https://www.thecitytutors.org/)
-  * [PupilPrep] (https://pupilprepinc.org/)
+  * [PupilPrep](https://pupilprepinc.org/)
 
 ## Awards
-
-
-
-
-
-
