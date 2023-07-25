@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : Home
+title                    : Tiffany's Homepage
 title_separator          : "-"
 name                     : &name "Tiffany"
 description              : &description 
@@ -102,7 +102,7 @@ author:
   instagram        : "tiffany.wang_"
   impactstory      : 
   lastfm           :
-  linkedin         : "www.linkedin.com/in/tiffany-wang-191402198"
+  linkedin         : "tiffany-wang-191402198"
   orcid            : 
   pinterest        :
   soundcloud       :
