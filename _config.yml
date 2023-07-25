@@ -12,7 +12,7 @@ title_separator          : "-"
 name                     : &name "Tiffany"
 description              : &description 
 url                      : https://t-wang1.github.io/ 
-baseurl                  : "/pages/about" 
+baseurl                  : 
 repository               : "https://github.com/t-wang1/t-wang1.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
