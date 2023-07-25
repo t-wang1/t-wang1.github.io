@@ -1,4 +1,5 @@
 ---
+layout: archive
 title: 'Sign-up Form'
 date: 2023-07-24
 permalink: /projects
