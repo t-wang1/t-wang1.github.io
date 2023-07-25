@@ -1,8 +1,6 @@
 ---
 title: 'Sign-up Form'
 date: 2023-07-24
-permalink: /projects
-tags:
 ---
 
 This is a sample sign-up form I created for The Odin Project
