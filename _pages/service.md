@@ -5,7 +5,7 @@ permalink: /service/
 author_profile: true
 ---
 
-## Service
+### Service
 
 * Student Leadership
   * [SBU Theta Tau](https://thetatausbu.com/)
@@ -13,4 +13,4 @@ author_profile: true
   * [The City Tutors](https://www.thecitytutors.org/)
   * [PupilPrep](https://pupilprepinc.org/)
 
-## Awards
+### Awards
