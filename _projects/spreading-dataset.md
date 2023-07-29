@@ -1,7 +1,9 @@
 ---
-title: 'Spreading Dataset'
-date: 2023-07-29
+layout: archive
+title: "Spreading Dataset"
 permalink: /projects/spreading-dataset
+date: 2023-07-29
+author_profile: true
 ---
 
 ### Introduction 
