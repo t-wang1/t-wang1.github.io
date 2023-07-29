@@ -10,14 +10,14 @@ redirect_from:
 
 I’m a sophomore at Stony Brook University majoring in Computer Science and Economics. I’m interested in pursuing research regarding the design and implementation of programming languages.  My research in the [Automotive Ethics Lab](https://www.stonybrook.edu/commcms/vertically-integrated-projects/teams/_team_page/team_page.php?team=Automotive%20Ethics) involves establishing edge cases that test our autonomous vehicle against distinct ethical theories.
 
-What's This?
-======
+### What's This?
+
 This website serves as a repository for any projects, notes, and writings. Additionally, I believe that writing crystallizes thoughts and ideas and so this is a medium through which I can practice and hone in on those skills. 
 
-Mindset
-======
+### Mindset
+
 Something that I think is frequently overlooked and understated in its importance. The right mindset is conducive to completing any short or long term goal. Here are a few that I always come back to:
 
-- Practice doing things in life that lie beyond your feelings. They’ll make you a stronger person
 - Put yourself in places you don’t belong. When you start before you’re ready, reality shifts drastically.
-- There are three forces that move you: motivation, discipline, and drive. Motivation is doing things because you feel like it. Discipline is doing things because you have decided to do them. Drive is doing something because it is part of who you are. It’s the flame that cannot be extinguished, sparked by your deepest pain, ambition, or enlightenment. Motivation and discipline will make you powerful, but drive will make you unstoppable.
+- You won’t always feel motivated. Practice discipline.
+- Progress isn’t always linear, but continue to put in the work.

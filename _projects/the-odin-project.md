@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: "The Odin Project"
-permalink: /projects/
+permalink: /projects/the-odin-project
 date: 2023-07-25
 author_profile: true
 ---
