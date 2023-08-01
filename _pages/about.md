@@ -8,11 +8,11 @@ redirect_from:
   - /about.html
 ---
 
-I’m a sophomore at Stony Brook University majoring in Computer Science and Economics. I’m interested in pursuing research regarding the design and implementation of programming languages.  My research in the [Automotive Ethics Lab](https://www.stonybrook.edu/commcms/vertically-integrated-projects/teams/_team_page/team_page.php?team=Automotive%20Ethics) involves establishing edge cases that test our autonomous vehicle against distinct ethical theories.
+I’m a sophomore at Stony Brook University majoring in Computer Science and Economics. I’m interested in pursuing research regarding the design and implementation of programming languages.  My research in the [Automotive Ethics Lab](https://www.stonybrook.edu/commcms/vertically-integrated-projects/teams/_team_page/team_page.php?team=Automotive%20Ethics) involves establishing edge cases that test autonomous vehicle against distinct ethical theories.
 
 ### What's This?
 
-This website serves as a repository for any projects, notes, and writings. Additionally, I believe that writing crystallizes thoughts and ideas and so this is a medium through which I can practice and hone in on those skills. 
+This website serves as a repository for any notes, projects, and writings. Additionally, I'm a believer that writing helps crystallizes thoughts and ideas and so this is a medium through which I can practice those skills. 
 
 ### Mindset
 

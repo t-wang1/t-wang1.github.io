@@ -10,7 +10,7 @@ author_profile: true
 * Student Leadership
   * [SBU Theta Tau](https://thetatausbu.com/), Fundraising Chair, Risk Management Chair.
 * Community 501(c)3 Nonprofit
-  * [The City Tutors](https://www.thecitytutors.org/)
-  * [PupilPrep](https://pupilprepinc.org/)
+  * [The City Tutors](https://www.thecitytutors.org/), Mentorship Manager.
+  * [PupilPrep](https://pupilprepinc.org/), Mentor
 
 ### Awards
