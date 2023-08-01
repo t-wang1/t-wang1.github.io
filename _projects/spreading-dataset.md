@@ -8,7 +8,9 @@ author_profile: true
 
 ### Introduction 
 
-Debate events like LD and policy frequently involve spreading (aka speed-reading). The purpose? Try to cram as many arguments as possible. The challenge? Maintain coherence while doing it. This program allows the user to upload an audio file and have OpenAI’s whisper API transcribe so the user can see how coherent they are
+Debate events like LD and policy frequently involve spreading (aka speed-reading). The purpose? Try to cram as many arguments as possible. The challenge? Maintain coherence while doing it. This program allows the user to upload an audio file and have OpenAI’s Whisper API transcribe it so the user can see how coherent they are. 
+
+[Spreading Dataset](https://github.com/t-wang1)
 
 ### Get Started 
 
@@ -19,9 +21,8 @@ Debate events like LD and policy frequently involve spreading (aka speed-reading
 
 ### Resources
 
-* (https://www.elsewhere.org/journal/pomo/ )
-  * will generate new reading material for you each time you refresh the page
-* (https://readingsoft.com/)
-  * time your words per minute here! 
+* [Reading Material](https://www.elsewhere.org/journal/pomo/ )
+  * will generate new text each time you refresh the page
+* [Speed Reading Test](https://readingsoft.com/)
 
 
