@@ -10,12 +10,12 @@ author_profile: true
 
 Debate events like LD and policy frequently involve spreading (aka speed-reading). The purpose? Try to cram as many arguments as possible. The challenge? Maintain coherence while doing it. This program allows the user to upload an audio file and have OpenAI’s Whisper API transcribe it and give it a grade so the user can see how coherent they are. 
 
-[Spreading Dataset](https://github.com/t-wang1)
+[Spreading Dataset](https://github.com/t-wang1/spreading-dataset.git)
 
 ### Get Started 
 
 1. Run python3 spreading.py
-  * If you're encountering issues, go to your command palette (Command + Shift + P) then select interpret 
+  * If you're encountering issues, go to your command palette (Command + Shift + P) then select interpreter 
 2. Open http://localhost:3000
 3. Select an audio file (works with mp3, mp4, and wav files) and a .txt file and then upload 
   * The actual transcribed file will appear in your root directory
