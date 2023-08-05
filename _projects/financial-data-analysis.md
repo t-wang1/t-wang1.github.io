@@ -1,8 +1,9 @@
 ---
 layout: archive
 title: 'SBUX Analysis'
-date: 2023-08-27
 permalink: /projects/financial-data-analysis
+date: 2023-08-5
+author_profile: true
 ---
 
 ### Introduction
@@ -23,8 +24,16 @@ According to [Quartz](https://qz.com/195631/what-people-order-at-starbucks-aroun
 * **portfolio value**: total shares * today’s share value
 * **total gain**: portfolio value - principal
 
-Using these calculations, investing $3.45 each market day for 5 years would’ve brought a principal investment of $4336.65 to $5416.16. That’s a 24.89% gain or $1079.51.
+Using these calculations, investing $3.45 each market day for 5 years would’ve brought a principal investment of $4340.10 to $5328.12. That’s a 22.76% gain or 988.02.
 
 <iframe title = "Embedded cell output" src = "https://embed.deepnote.com/9f7975cc-612b-4e50-88af-2babcbae5f16/709b9a9f37c84e5a81cbae41680a7c9f/80217183033c4fb09d285505981d9b43?height=1013.4861450195312" height = "1013.4861450195312" width = "500">
 
-How does investing into SBUX stack up against a mid-size company or an index fund? Applying the same DCA strategy to Dutch Bros (BROS) and to the S&P 500 (SPY), we see investing into Dutch Bros with a principal investment of $1638.75 would’ve resulted in a 22.55% drop resulting in a portfolio value of $1269.16.
+How does investing into SBUX stack up against a an index fund? Applying the same DCA strategy to the S&P 500 (SPY) the same principal investment of $4340.10 would’ve resulted in a portfolio balance of $5800.12, a gain of 33.64%. 
+
+<iframe title = "Embedded cell output" src = "https://embed.deepnote.com/9d38d4f1-0114-43fe-97ea-cfb021651a21/d01c660a1c644e098474d1487a1923c1/22f9a86b3caa4a3da52bb489326f2172?height=509.5364685058594" height = "509.5364685058594" width = "500">
+
+Does investing in SBUX have any diversification benefits if you already have your money in the S&P 500? 
+
+<iframe title = "Embedded cell output" src = "https://embed.deepnote.com/9d38d4f1-0114-43fe-97ea-cfb021651a21/d01c660a1c644e098474d1487a1923c1/ffd5f936e0054cb1b1c3b4b9e1210564?height=710.7691040039062" height = "710.7691040039062" width = "500">
+
+With a correlation coefficient of 0.82, it seems slightly risky to put all your eggs in one basket. 
