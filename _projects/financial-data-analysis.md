@@ -36,4 +36,4 @@ Does investing in SBUX have any diversification benefits if you already have you
 
 <iframe title = "Embedded cell output" src = "https://embed.deepnote.com/9d38d4f1-0114-43fe-97ea-cfb021651a21/d01c660a1c644e098474d1487a1923c1/ffd5f936e0054cb1b1c3b4b9e1210564?height=710.7691040039062" height = "710.7691040039062" width = "500">
 
-With a correlation coefficient of 0.82, it seems slightly risky to put all your eggs in one basket. 
+With a correlation coefficient of 0.82, it seems slightly risky to put all your eggs in one basket. But there’s no doubt that whether you’re putting your money in SBUX or SPY you would’ve made returns at a far greater rate than simply drinking your morning coffee. 
