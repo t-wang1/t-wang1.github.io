@@ -30,5 +30,3 @@ Debate events like LD and policy frequently involve spreading (aka speed-reading
 * [Speed Reading Test](https://readingsoft.com/)
 * [Verbatim](https://paperlessdebate.com/verbatim/)
   * A free, open-source platform that makes cutting cards so much easier 
-
-
