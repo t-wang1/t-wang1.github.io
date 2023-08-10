@@ -14,7 +14,7 @@ I decided to log all my thoughts/questions (and answers) here to reinforce my le
 
 <details>
     <summary> Is DCA actually a good strat? </summary>
-    <p> The short answer: investing a lump sum <a href = "https://www.northwesternmutual.com/life-and-money/is-dollar-cost-averaging-better-than-lump-sum-investing"> outperforms </a> dollar-cost averaging. The longer answer: it depends on a myriad of factors - current financial situation, market volatility, etc. </p>
+    <p> The short answer: investing a lump sum <a href = "https://www.northwesternmutual.com/life-and-money/is-dollar-cost-averaging-better-than-lump-sum-investing">outperforms</a> dollar-cost averaging. The longer answer: it depends on a myriad of factors - current financial situation, market volatility, etc. </p>
 </details>
 
 <details>
@@ -24,6 +24,6 @@ I decided to log all my thoughts/questions (and answers) here to reinforce my le
 
 ### Media Diet
 
-* [Deadnysde] (https://www.youtube.com/@Deadnsyde)
-* [Humbled Trader] (https://www.youtube.com/@HumbledTraderOfficial)
-* [Martin Shkreli] (https://www.youtube.com/@TheShkreliPill)
+* [Deadnysde](https://www.youtube.com/@Deadnsyde)
+* [Humbled Trader](https://www.youtube.com/@HumbledTraderOfficial)
+* [Martin Shkreli](https://www.youtube.com/@TheShkreliPill)
