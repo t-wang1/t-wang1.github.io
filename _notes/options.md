@@ -22,9 +22,9 @@ Why trade a call?
 
 ### Definitions
 
-**queue priority**: the priority with which your order is filled - ranked by price, and then by time of entry
-**spread**: difference between bid and ask price
-**theo**: current value a market maker believes an option is worth
+**queue priority**: the priority with which your order is filled - ranked by price, and then by time of entry  
+**spread**: difference between bid and ask price  
+**theo**: current value a market maker believes an option is worth  
 **tick increment**: minimum increment between a price and the next price
 
 ### Liquidity
@@ -37,12 +37,12 @@ Options are based on the foward prices of the underlying assets. To calculate th
 
 ### Another Look at Options
 
-An **in-the-money(itm)** option has some _intrinsic value_ (and extrinsic value) based on the current location of the underlying compared to the strike of the option. The intrinsic value of an option can be calculated as follows:
+An **in-the-money(ITM)** option has some _intrinsic value_ (and extrinsic value) based on the current location of the underlying compared to the strike of the option. The intrinsic value of an option can be calculated as follows:
 
-Intrinsic value (call): $$Max(0, U-K)$$ where $$U-K = Underlying Price - Strike Price$$
-Intrinsic value (put): $$Max(0, K-U)$$ where $$K-U = Strike Price - Underlying Price$$
+Intrinsic value (call): $$Max(0, U-K)$$ where U-K = Underlying Price - Strike Price  
+Intrinsic value (put): $$Max(0, K-U)$$ where K-U = Strike Price - Underlying Price
 
-An **out-of-the-money(otm)** option has no intrinsic value. It does however have _extrinsic value_, attributed to the optionality of the option contract itself.
+An **out-of-the-money(OTM)** option has no intrinsic value. It does however have _extrinsic value_, attributed to the optionality of the option contract itself.
 
 What influences extrinsic value?
 
