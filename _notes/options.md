@@ -70,6 +70,6 @@ Call Price - Put Price = Underlying Price - Strike which can be otherwise simpli
 
 The **delta** of an option is the number of contracts it takes to establish a _neutral hedge_ (i.e. indifferent to directional moves) under current market conditions. A more intuitive way of thinking about delta is the probability that an option will expire ITM. It's represented as a number between 0 and 1 for a call option and a number between 0 and -1 for a put option. 
 
-**Example**: You're trading a $\$$100.00 underlying and a 50 delta call is $\$$1.00. If that underlying moves to $\$$105.00 the call will be worth will be worth $\$$3.50.
+**Example**: You're trading a 100.00 underlying and a 50 delta call is 1.00. If that underlying moves to 105.00 the call will be worth will be worth 3.50.
 
 **Gamma** is often thought of as the rate of change in delta. The **theta** of an option is how much value that option loses daily. The **vega** of an option is the change in options value with a changed in implied volatility. Formally it's the option value price change per 1 point change in implied volatility. **Rho** is the sensitivity of an option's price to a change in interest rates. 
