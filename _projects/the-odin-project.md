@@ -13,3 +13,5 @@ I started The Odin Project in September of 2022. For the first few months I was 
 ### Projects
 
 [Sign-Up Form](https://t-wang1.github.io/sign-up-form/): HTML/CSS
+
+[Admin Dashboard](https://t-wang1.github.io/admin-dashboard/): HTML/CSS 
