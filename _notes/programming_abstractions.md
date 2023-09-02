@@ -18,6 +18,8 @@ We can further distinguish from a language's _concrete syntax_ and _abstract syn
 
 To describe a language we use _grammar_. A grammar is composed by a set of rules, called _productions_. Productions tell us how the words of the language can be constructed from the symbols in the alphabet. For example, the following grammar describes the language of arithmetic expressions: 
 
-$$Integer n ::= ... -3 | -2 | -1 | 0 | 1 | 2 | 3 ...$$
-$$Binary Operator \oplus ::= + | - | * | /$$
-$$Expression e ::= n | e<sub>1</sub> \oplus e<sub>2</sub>$$
+$$
+\text{Integer} n ::= \ldots -3 | -2 | -1 | 0 | 1 | 2 | 3 \ldots \\
+\text{Binary Operator} \oplus ::= + | - | * | /
+\text{Expression} e ::= n | e<sub>1</sub> \oplus e<sub>2</sub>
+$$
