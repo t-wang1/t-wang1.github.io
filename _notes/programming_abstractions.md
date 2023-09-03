@@ -27,3 +27,17 @@ $$
 \text{Expression } e ::= n | e_1 \oplus e_2
 $$
 
+Symbols like e_1 and e_2 are _nonterminal symbols_ while symbols that are drawn from the alphabet of the language are called _terminal symbols_. 
+
+### Context-Free Languages and Grammars
+
+A _context-free grammar_ is a tuple $$G = ({\sigma}, N, P, S)$$ where 
+
+  * $${\sigma}$$ is a finite set of terminal symbols,  
+  * N is a finite set of nonterminal symbols disjoint from $${\sigma}$$,
+  * P $$\subseteq$$ (N, ($${\sigma}\cup N$$)*)
+  * S $$\in$$ N is the starting symbol.
+
+### Eliminating Ambiguity
+
+We call a grammar in which a word has more than one derivation _ambiguous_.
