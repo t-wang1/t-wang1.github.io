@@ -27,17 +27,35 @@ $$
 \text{Expression } e ::= n | e_1 \oplus e_2
 $$
 
-Symbols like e_1 and e_2 are _nonterminal symbols_ while symbols that are drawn from the alphabet of the language are called _terminal symbols_. 
+Symbols like $$e_1$$ and $$e_2$$ are _nonterminal symbols_ while symbols that are drawn from the alphabet of the language are called _terminal symbols_. 
 
 ### Context-Free Languages and Grammars
 
-A _context-free grammar_ is a tuple $$G = ({\sigma}, N, P, S)$$ where 
+A _context-free grammar_ is a tuple $$G = ({\Sigma}, N, P, S)$$ where 
 
-  * $${\sigma}$$ is a finite set of terminal symbols,  
-  * N is a finite set of nonterminal symbols disjoint from $${\sigma}$$,
-  * P $$\subseteq$$ (N, ($${\sigma}\cup N$$)*)
+  * $${\Sigma}$$ is a finite set of terminal symbols,  
+  * N is a finite set of nonterminal symbols disjoint from $${\Sigma}$$,
+  * P $$\subseteq$$ (N, ($${\Sigma}\cup N$$)*)
   * S $$\in$$ N is the starting symbol.
 
 ### Eliminating Ambiguity
 
 We call a grammar in which a word has more than one derivation _ambiguous_.
+
+### Lambda Calculus
+
+It's a language with three constructs:
+
+  * functions, 
+  * function applications, and
+  * variables
+
+A simple example of a function is $$\lambda x.x$$ where the $$\lambda$$ denotes a function, the first variable is the argument to the function, and the dot is a separator after which is the body of the function. In lambda calculus, a function can only have one input and one output but they can be nested. 
+
+### Names, Scopes, and Binding
+
+A _name_ is simply a string used to represent something. Names are really important for abstraction because otherwise you would have to refer to things through their addresses. Names for subroutines aid in _control abstraction_ while names for classes aid in _data abstraction_. _Binding_ is the association between a name and the thing it's binding. The time at which the binding is created is known as _binding time_.
+
+Early binding time leads to greater efficiency while later binding time leads to greater flexibility. Things bound before runtime are considered _statically bound_ and are associated with compiled languages; things bound after runtime are considered _dynamically bound_ are are associated with interpreted languages. An object's lifetime and a binding's lifetime may be different. 
+
+The textual region in which a binding is active is its _scope_. Languages where the scope of a binding is determined at compile-time are called _statically/lexically scoped languages_. A variable is said to be _shadowed_ when a variable declared within a certain scope has the same name as a variable declared in an outer scope.
