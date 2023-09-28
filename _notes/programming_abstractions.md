@@ -54,9 +54,9 @@ A simple example of a function is $$\lambda x.x$$ where the $$\lambda$$ denotes 
 
 Syntax conventions of lambda calculus:
   1. function application is left-associative: $x y z$ is equivalent to $(x y) z$ and not $x (y z)$
-  2. function application has higher precedence than function definition: $$\lambda x. \lambda y.xy$$ is equivalent to $$\lambdax x.(\lambda y. (xy))$$
+  2. function application has higher precedence than function definition: $$\lambda x. \lambda y.xy$$ is equivalent to $$\lambda x.(\lambda y. (xy))$$
 
-When a variable is used in an expression under a function with a variable of the same name, then the variable is _bound_. If a variable is not bound, it is _free_. For example, in $$\lambda x.x$$ the inner variable $x$ is bound to the function argument x. In $\lambda x.y$ the inner variable $y$ is free. 
+An occurrence of a variable $x$ that immediately follows a $\lambda$ as in $\lambda x.t$ is called a _binding occurrence_. All other occurrences of variables are called _using occurrences_. When a variable is used in an expression under a function with a variable of the same name, then the variable is _bound_. If a variable is not bound, it is _free_. For example, in $$\lambda x.x$$ the inner variable $x$ is bound to the function argument x. In $\lambda x.y$ the inner variable $y$ is free. A term that has no free variables is called _closed_. A _program_ is a closed term.
 
 Formally, a variable $x$ is free in an expression under one of the following conditions:
 
@@ -69,6 +69,14 @@ Formally, a variable $x$ is bound under one of the two conditions:
   1. $x$ is bound in $$\lambda y.e$$ if the name $$x = y$$ or $x$ is bound in the expression e
   2. $x$ is bound in $$e_1 e_2$$ if $x$ is bound in either $$e_1$$ or $$e_2$$
 
+Consider the term $t$ given by $(\lambda x.(\lambda y. x(z y)))y$:
+  * there's one using occurrence of $z$ which is free so it's free in $t$
+  * from left to right, there's one binding occurrence of $x$ and one using occurrence of $x$
+    * the using occurrence of $x$ is within the scope of $\lambda x$ so it's bound and not free in $t$
+  * from left to right, there's one binding occurrence of $y$ followed by two using occurrences of $y$
+    * the leftmost using occurrence of $y$ is bound 
+    * the right using occurrence of $y$ is free 
+  * since $t$ has free variables, it's not a program
 
 ### Names, Scopes, and Binding
 
