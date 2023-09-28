@@ -8,6 +8,9 @@ author_profile: true
 
 These notes for CSE 220: System Fundamentals 1 taught by Dr. Abid Malik
 
+### Resources/Links
+  * [Converting Between Decimal and Binary Floating Point Numbers](https://kyledewey.github.io/comp122-fall17/lecture/week_2/floating_point_interconversions.html)
+
 ### Machine Representation of Data
 
 For _unsigned integers_ (0, $$\infty$$) there are 2<sup>n</sup> possible combinations for $$n$$ bits. In _fixed precision_ integer arithmetic it's possible for an operation to result in an _overflow_. 
@@ -18,9 +21,34 @@ To obtain the negative of a value, find the _complement_ of all the bits. To cir
 
 _Excess-k/bias-k_ encoding is important in representing real numbers. Integer $$i$$ is represented by the unsigned encoding of $$i+k$$. This preserves the order of positive and negative numbers so that comparing two values is more straightforward.
 
-IEEE 754 is the industry standard way of approximating real numbers. To convert from IEEE 754 to decimal you can use the following formula $$(-1)^s \times 2^{e-bias} \times (1+f)$$ where:
+IEEE 754 is the industry standard way of approximating real numbers. There are typically three parts:
+  * sign bit: 0 (positive) or 1 (negative)
+  * exponent: stored in excess-127 for 32-bit version and excess-1023 for 64-bit version
+  * fraction/mantissa: contains the digits to the right of the binary point (23 bits for 32-bit version and 52 bits for 64-bit version)
+
+To convert from IEEE 754 to decimal you can use the following formula $$(-1)^s \times 2^{e-bias} \times (1+f)$$ where:
   * $$s$$ is the sign bit (0/1) 
   * $$e$$ is the decimal value of the exponent field
   * $$\text{bias}$$ is 127 for single precision, 1023 for double precision
   * f is the decimal value of the fraction field
 
+### C Programming 
+
+C doesn't define the order in which subexpressions are evaluated except those that include the logical and, or, conditional, or comma operator. For example, in the expression $$ (a + b) * (c - d)$$ either subexpression could be evaluated first. It also follows the rule that an else clause belongs to the nearest if statement that hasn't already been paired with an else. 
+
+### Bitwise Shift Operators
+
+Bitwise operators shift the bits in an integer to the left or right: 
+  * $$i << j$$ shifts the bits in $$i$$ left by $$j$$ places
+    * for each bit that is shifted off the left end, a zero bit enters at the right
+  * $$i >> j$$ shifts the bits in $$i$$ right by $$j$$ places
+    * if $$i$$ is unsigned/non-negative, zeros are added to the left as needed
+    * if $$i$$ is negative, the result is implementation defined 
+
+To modify a variable by shifting its bits, use the compound assignment operators <<= and >>=. There are four additional bitwise operators:
+  * ~ bitwise complement
+  * ^ bitwise exclusive or 
+  * & bitwise and 
+  * | bitwise inclusive or 
+
+The shifting operators have the highest precedence followed by ~, &, ^, |. 
