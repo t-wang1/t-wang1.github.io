@@ -50,7 +50,11 @@ It's a language with three constructs:
   * function applications, and
   * variables
 
-A simple example of a function is $$\lambda x.x$$ where the $$\lambda$$ denotes a function, the first variable is the argument to the function, and the dot is a separator after which is the body of the function. In lambda calculus, a function can only have one input and one output but they can be nested. 
+A simple example of a function is $$\lambda x.x$$ where the $$\lambda$$ denotes a function, the first variable is the argument to the function, and the dot is a separator after which is the body of the function. In lambda calculus, a function can only have one input and one output but they can be nested. For example, $$\lambda x.\lambda y.(xy)$$ This is a function that takes in an input $x$, then returns a function which takes an input, $y$, then calls the function $x$ with $y$ as its argument. 
+
+Syntax conventions of lambda calculus:
+  1. function application is left-associative: $x y z$ is equivalent to $(x y) z$ and not $x (y z)$
+  2. function application has higher precedence than function definition: $$\lambda x. \lambda y.xy$$ is equivalent to $$\lambdax x.(\lambda y. (xy))$$
 
 When a variable is used in an expression under a function with a variable of the same name, then the variable is _bound_. If a variable is not bound, it is _free_. For example, in $$\lambda x.x$$ the inner variable $x$ is bound to the function argument x. In $\lambda x.y$ the inner variable $y$ is free. 
 
@@ -62,7 +66,7 @@ Formally, a variable $x$ is free in an expression under one of the following con
 
 Formally, a variable $x$ is bound under one of the two conditions:
 
-  1. $x$ is bound in $$\lambda y.e$$ if the name $$x \eq y$$ or $x$ is bound in the expression e
+  1. $x$ is bound in $$\lambda y.e$$ if the name $$x = y$$ or $x$ is bound in the expression e
   2. $x$ is bound in $$e_1 e_2$$ if $x$ is bound in either $$e_1$$ or $$e_2$$
 
 
