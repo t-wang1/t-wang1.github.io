@@ -115,7 +115,7 @@ A _primitive type_ is a type that is not defined in terms of any other types. An
 
 An _algebraic data type_/_variant type_ is a data type representing a value that has multiple possibilities. The syntax to define a variant type is 
 
-$\text{type t} = c_1 | c_2 | ... | c_n$
+$$\text{type t} = c_1 \text{|} c_2 \text{| ... |}  c_n$$
 
 where the constant value $c_i$ are called _constructors_. 
 
