@@ -113,14 +113,18 @@ Types can be divided into scalar and composite types. A _scalar type_ is a type 
 
 A _primitive type_ is a type that is not defined in terms of any other types. An _ordinal type_ is a type where the values belong to a finite range of integers values (i.e. integers, characters, boolean). An _enumeration_ type consists of a set of finite values explicitly enumerated by the programmer. It's considered an ordinal, scalar, and primitive type.
 
-An _algebraic data type_/_variant type_ is a data type representing a value that has multiple possibilities. The syntax to define a variant type is $\text{type t} = c_1 | c_2 | ... | c_n$ where the constant value $c_i$ are called _constructors_. 
+An _algebraic data type_/_variant type_ is a data type representing a value that has multiple possibilities. The syntax to define a variant type is 
 
-![](/images/notes/programming_abstractions/algebraic_datatype.png)
+$\text{type t} = c_1 | c_2 | ... | c_n$
+
+where the constant value $c_i$ are called _constructors_. 
+
+![](algebraic_datatype.png)
 
 In the above example, the shape data type is a variant type composed of constants/constructors. Each constructor can include additional data. Every instance of is formed from exactly one constructor in a process called _tagging_.
 
 The _sum type_ describes a variant that's derived from exactly from one constructor. The _product type_ describes a variant that's derived from a constructor that carries tuples or records; that's to say each component has subvalues. 
 
-![](/images/notes/programming_abstractions/union.png)
+![](union.png)
 
 Using union types allows us to create hetergeneous lists, where some items are strings are others are integers. 
