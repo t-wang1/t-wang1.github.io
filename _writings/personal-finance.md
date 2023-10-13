@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Personal Finance"
+title: "Running"
 permalink: /writings/personal-finance
 date: 2023-08-09
 author_profile: true
@@ -20,6 +20,11 @@ I decided to log all my thoughts/questions (and answers) here to reinforce my le
 <details>
     <summary> Concentration v. Diversification </summary>
     <p> Diversify if you don’t know what you’re doing. If you’re an above average investor, concentration will work in your favor. </p>
+</details>
+
+<details>
+    <summary> Is the MACD indicator any good? </summary>
+    <p> The general consensus: it's useful but a trader can get whipsawed several times before it adequately captures a change in momemtum. The result: small gains or possibly losses </p>
 </details>
 
 ### Media Diet

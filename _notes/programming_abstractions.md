@@ -8,6 +8,10 @@ author_profile: true
 
 These notes are for [CSE 216: Programming Abstractions](https://sites.google.com/cs.stonybrook.edu/cse216/) taught by Dr. Ritwik Banerjee and are supplemented by material from NYU's Programming Languages class taught by Dr. Thomas Wies.
 
+### Resources/Links
+
+  * [Folding and Tail Recursion](https://www.cs.cornell.edu/courses/cs3110/2014sp/recitations/5/folding.html)
+
 ### Syntax and Parsing
 
 We distinguish between the _syntax_ and _semantics_ of a programming language. The syntax describes the structure of a program while semantics describes a program's meaning. 
@@ -78,6 +82,20 @@ Consider the term $t$ given by $(\lambda x.(\lambda y. x(z y)))y$:
     * the right using occurrence of $y$ is free 
   * since $t$ has free variables, it's not a program
 
+### OCaml
+
+Functions that use nesting of lambda abstractions to take multiple parameters are called _curried functions_. _Wildcards_ are useful 
+
+<details>
+    <summary> What's the function of an accumulator? When do you use it? </summary>
+    <p> Accumulators are used when you want to accumulate results while processing elements in an recursive function. It's utilized in situations like aggregating values and filtering. </p>
+</details>
+
+<details>
+  <summary> What does the List.fold_left function do? </summary>
+  <p> It iterates over the elements of a list, applies a given function to an element, and accumulates the result. </p>
+</details>
+
 ### Names, Scopes, and Binding
 
 A _name_ is simply a string used to represent something. Names are really important for abstraction because otherwise you would have to refer to things through their addresses. Names for subroutines aid in _control abstraction_ while names for classes aid in _data abstraction_. _Binding_ is the association between a name and the thing it's binding. The time at which the binding is created is known as _binding time_.
@@ -89,4 +107,20 @@ The textual region in which a binding is active is its _scope_. Languages where 
 
 ### Data Types
 
-There are multiple ways to think about data types. In the _denotational semantics approach_, we can implicitly picture values from a domain. In the _structural semantics approach_, complex structures are described in terms of simpler constituents.  
+There are multiple ways to think about data types. In the _denotational semantics approach_, we can implicitly picture values from a domain. In the _structural semantics approach_, complex structures are described in terms of simpler constituents. 
+
+Types can be divided into scalar and composite types. A _scalar type_ is a type whose values occupy a fixed amount of memory and are atomic: not subdivided further in any way. A _composite type_ is a type whose values are composed of simpler component values. Each component can be scalar or composite. 
+
+A _primitive type_ is a type that is not defined in terms of any other types. An _ordinal type_ is a type where the values belong to a finite range of integers values (i.e. integers, characters, boolean). An _enumeration_ type consists of a set of finite values explicitly enumerated by the programmer. It's considered an ordinal, scalar, and primitive type.
+
+An _algebraic data type_/_variant type_ is a data type representing a value that has multiple possibilities. The syntax to define a variant type is $\text{type t} = c_1 | c_2 | ... | c_n$ where the constant value $c_i$ are called _constructors_. 
+
+![](/images/notes/programming_abstractions/algebraic_datatype.png)
+
+In the above example, the shape data type is a variant type composed of constants/constructors. Each constructor can include additional data. Every instance of is formed from exactly one constructor in a process called _tagging_.
+
+The _sum type_ describes a variant that's derived from exactly from one constructor. The _product type_ describes a variant that's derived from a constructor that carries tuples or records; that's to say each component has subvalues. 
+
+![](/images/notes/programming_abstractions/union.png)
+
+Using union types allows us to create hetergeneous lists, where some items are strings are others are integers. 
