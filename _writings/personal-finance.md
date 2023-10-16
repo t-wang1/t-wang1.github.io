@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Running"
+title: "Personal Finance"
 permalink: /writings/personal-finance
 date: 2023-08-09
 author_profile: true
@@ -26,6 +26,13 @@ I decided to log all my thoughts/questions (and answers) here to reinforce my le
     <summary> Is the MACD indicator any good? </summary>
     <p> The general consensus: it's useful but a trader can get whipsawed several times before it adequately captures a change in momemtum. The result: small gains or possibly losses </p>
 </details>
+
+### Strategies 
+
+* Anytime the price of a stock opens the day 5% below the previous day's close, invest $250 in that stock the next day
+* Anytime the price of a stock closes lower than the previous day's close for days in a row, invest $250 in that stock the next day
+
+Each time you identify an opportunity, don't invest more than your position size. Traders who go broke don't stick to rules and parameters. 
 
 ### Media Diet
 

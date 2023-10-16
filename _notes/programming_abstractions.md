@@ -115,16 +115,16 @@ A _primitive type_ is a type that is not defined in terms of any other types. An
 
 An _algebraic data type_/_variant type_ is a data type representing a value that has multiple possibilities. The syntax to define a variant type is 
 
-$$\text{type t} = c_1 \text{|} c_2 \text{| ... |}  c_n$$
+$$\text{type t} =  c_1  \text{|}  c_2  \text{| ... |}   c_n$$
 
 where the constant value $c_i$ are called _constructors_. 
 
-![](algebraic_datatype.png)
+<img src = "algebraic_datatype.png"/>
 
 In the above example, the shape data type is a variant type composed of constants/constructors. Each constructor can include additional data. Every instance of is formed from exactly one constructor in a process called _tagging_.
 
 The _sum type_ describes a variant that's derived from exactly from one constructor. The _product type_ describes a variant that's derived from a constructor that carries tuples or records; that's to say each component has subvalues. 
 
-![](union.png)
+<img src = "union.png"/>
 
 Using union types allows us to create hetergeneous lists, where some items are strings are others are integers. 
