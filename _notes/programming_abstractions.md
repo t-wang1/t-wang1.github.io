@@ -119,12 +119,14 @@ $$\text{type t} =  c_1  \text{|}  c_2  \text{| ... |}   c_n$$
 
 where the constant value $c_i$ are called _constructors_. 
 
-<img width = 100% src = "/images/algebraic_datatype.jpeg"/>
+![image](./images/algebraic_datatype.jpeg)
+<!-- <img width = 100% src = "/images/algebraic_datatype.jpeg"/> -->
 
 In the above example, the shape data type is a variant type composed of constants/constructors. Each constructor can include additional data. Every instance of is formed from exactly one constructor in a process called _tagging_.
 
 The _sum type_ describes a variant that's derived from exactly from one constructor. The _product type_ describes a variant that's derived from a constructor that carries tuples or records; that's to say each component has subvalues. 
 
-<img width = 100% src = "/images/union.jpeg"/>
+<!-- <img width = 100% src = "/images/union.jpeg"/> -->
+![image](./images/union.jpeg)
 
 Using union types allows us to create hetergeneous lists, where some items are strings are others are integers. 
