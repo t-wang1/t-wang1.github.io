@@ -127,6 +127,6 @@ In the above example, the shape data type is a variant type composed of constant
 The _sum type_ describes a variant that's derived from exactly from one constructor. The _product type_ describes a variant that's derived from a constructor that carries tuples or records; that's to say each component has subvalues. 
 
 <!-- <img width = 100% src = "/images/union.jpeg"/> -->
-![image](./images/union.jpeg)
+![Alt Text](./Documents/t-wang1.github.io/images/union.jpeg)
 
 Using union types allows us to create hetergeneous lists, where some items are strings are others are integers. 
