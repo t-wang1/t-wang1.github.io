@@ -119,14 +119,16 @@ $$\text{type t} =  c_1  \text{|}  c_2  \text{| ... |}   c_n$$
 
 where the constant value $c_i$ are called _constructors_. 
 
-![image](./images/algebraic_datatype.jpeg)
-<!-- <img width = 100% src = "/images/algebraic_datatype.jpeg"/> -->
-
-In the above example, the shape data type is a variant type composed of constants/constructors. Each constructor can include additional data. Every instance of is formed from exactly one constructor in a process called _tagging_.
-
 The _sum type_ describes a variant that's derived from exactly from one constructor. The _product type_ describes a variant that's derived from a constructor that carries tuples or records; that's to say each component has subvalues. 
 
-<!-- <img width = 100% src = "/images/union.jpeg"/> -->
-![Alt Text](./Documents/t-wang1.github.io/images/union.jpeg)
+### Polymorphism 
 
-Using union types allows us to create hetergeneous lists, where some items are strings are others are integers. 
+There are two types of polymorphism: subtype polymorphism (Java relies heavily on this) and parametric polymorphism (functional PLs rely heavily on this). 
+
+Overriding is associated with _dynamic binding_ since the method that's called is determined at runtime. Overloading is associated with _static binding_ since the compiler looks at the method signatures during compile time. 
+
+Parametric polymorphism allows us to have a generic way of handling values without worrying about their type. This is done through _generic types_ and _generic functions_. 
+
+Casting up along the type hierarchy is known as _upcasting/broadening conversion_. The opposite is known as _downcasting/narrowing conversion_. It's "easier" to upcast than downcast since the "is-a" relation only goes upward; downcasting can't be done implicitly since there's a possibility that the type might not downcast to the right subtype. 
+
+The _diamond problem_ occurs when a method call results in ambiguity from the parent classes; this is only seen in languages that support multiple inheritance. 
