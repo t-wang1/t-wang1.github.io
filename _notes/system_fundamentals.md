@@ -52,3 +52,5 @@ To modify a variable by shifting its bits, use the compound assignment operators
   * | bitwise inclusive or 
 
 The shifting operators have the highest precedence followed by ~, &, ^, |. 
+
+A _pointer_ is a variable that holds an **address** to another variable. The & operator gives the address of an object. The * operator is the _indirection_ or _dereferencing_ operator; when applied to a pointer, it accesses the object the pointer points to. Since C is call by value, meaning it only changes copies of the variables, the only way to alter the variable is to pass pointers to the values to be changed. git
