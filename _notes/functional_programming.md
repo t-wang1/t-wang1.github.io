@@ -1,8 +1,8 @@
 ---
 layout: archive
-title: "Options"
-permalink: /notes/options
-date: 2023-08-09
+title: "Functional Programming"
+permalink: /notes/functional_programming
+date: 2023-11-28
 author_profile: true
 ---
 
