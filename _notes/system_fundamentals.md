@@ -10,6 +10,7 @@ These notes for CSE 220: System Fundamentals 1 taught by Dr. Abid Malik
 
 ### Resources/Links
   * [Converting Between Decimal and Binary Floating Point Numbers](https://kyledewey.github.io/comp122-fall17/lecture/week_2/floating_point_interconversions.html)
+  * [Declaraing Arrays in MIPS](https://www.cse.unsw.edu.au/~cs1521/17s2/lecs/week06/notes.html)
 
 ### Machine Representation of Data
 
@@ -59,7 +60,39 @@ A _pointer_ is a variable that holds an **address** to another variable. The & o
 
 MIPS is a **reduced instruction set computer (RISC)**, with a small number of simple instructions. Other architectures, like x86, are **complex instruction set computers (CISC)**. Commonly used variables are kept in registers, while less frequently used variables will need to be copied from registers to memory for "safekeeping" when you run out of registers. 
 
-  * A memory read is called a **load** $(lw)$
+  * A memory read is called a **load** ```(lw)```
     * Ex. ```$lw, $s0, 16($t1)```
-  * A memory write is called a **store** $(sw)$
-    * 
+      * adds the **offset** (16) to the **base address** ```($t1)```
+      * result: ```$s0``` holds the value at address ```($t1 + 16)```
+  * A memory write is called a **store** ```(sw)```
+    * Ex. ```$sw, $t4, 0x8($0)```
+      * adds the offset ```0x8``` to the base address ```($0)```
+      * result: writes the value in ```$t4``` to memory address 8
+
+There are 3 instruction formats:
+  1. R-Type: register operands
+  2. I-Type: immediate operand
+  3. J-Type: jump-type instruction 
+
+Helpful Pseudoinstructions: 
+  * ```li $v0, 4      # loads 4 into $v0```
+  * ```la $a0, str    # loads address of str into $a0```
+  * ```move $t1, $t2  # equivalent to add $t1, $t2, $0```
+  * ```mul d, s, t    # d = s * t```
+
+There are no if-statements or loops in MIPS. Instead there are **branch** instructions that direct the CPU to execute instructions out of sequential order. There's also the **program counter (PC)** which holds the address of the next instruction to execute. There are **conditional branches** in which the PC is updated if a condition is true and **unconditional branches** in which the PC is changed directly. 
+
+The **callee** is the function being called. The **caller** is the function that calls the callee. S registers are callee saved. T registers are caller saved. The convention is to use the S registers first followed by T registers and finally the stack. 
+
+Steps to call a function in MIPS:
+  1. The caller places the parameter values in **argument registers** so the callee can access them
+  2. The caller saves the return address and transfers control to the callee by jumping to its label 
+  3. The callee allocates/reserves any memory it may need for local variables 
+  4. The callee performs the task
+  5. The callee places the result in **value registers** where the caller can access it and deallocates any memory
+  6. The callee returns control to the caller
+
+Instruction Support for Functions: 
+  * To call a function: ```jal function_label```
+    * saves PC + 4 in register ```$ra``` so that when the function returns, the next instruction executed is the one immediately following the ```jal``` instruction 
+  * To return from a function: ```jr $ra```
