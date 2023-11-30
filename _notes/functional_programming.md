@@ -10,4 +10,10 @@ These notes are for CMU's 15-150, the introduction functional programming class.
 
 ### Structural Induction and Tail Recursion 
 
-Lists can be either $$[]$$ or $$x :: xs$$, and _nothing more_. 
+Lists can be either $[]$ or $x :: xs$, and _nothing more_. 
+
+Pattern matching is more powerful than conditionals. It lets you see what values really are, rather than simply querying them. It actually produces the goods, as opposed to just making claims. 
+
+A function is **tail recursive** if it makes a single recursive call as the _last thing that it does_, in the recursive case. 
+
+An **accumulator** is an additional argument to a function, which is meant to store the final answer, carrying it forward into future recursive calls. 
