@@ -60,6 +60,6 @@ A _pointer_ is a variable that holds an **address** to another variable. The & o
 MIPS is a **reduced instruction set computer (RISC)**, with a small number of simple instructions. Other architectures, like x86, are **complex instruction set computers (CISC)**. Commonly used variables are kept in registers, while less frequently used variables will need to be copied from registers to memory for "safekeeping" when you run out of registers. 
 
   * A memory read is called a **load** $(lw)$
-    * Ex. $\$lw, \$s0, 16(\$t1)$
+    * Ex. ```$lw, $s0, 16($t1)```
   * A memory write is called a **store** $(sw)$
     * 
