@@ -49,10 +49,10 @@ Bitwise operators shift the bits in an integer to the left or right:
 To modify a variable by shifting its bits, use the compound assignment operators <<= and >>=. There are four additional bitwise operators:
   * ~ bitwise complement
   * ^ bitwise exclusive or 
-  * & bitwise and 
-  * | bitwise inclusive or 
+  * & bitwise and
+  * $\vert$ bitwise inclusive or 
 
-The shifting operators have the highest precedence followed by ~, &, ^, |. 
+The shifting operators have the highest precedence followed by ~, &, ^, $\vert$. 
 
 A _pointer_ is a variable that holds an **address** to another variable. The & operator gives the address of an object. The * operator is the _indirection_ or _dereferencing_ operator; when applied to a pointer, it accesses the object the pointer points to. Since C is call by value, meaning it only changes copies of the variables, the only way to alter the variable is to pass pointers to the values to be changed. 
 
@@ -96,3 +96,7 @@ Instruction Support for Functions:
   * To call a function: ```jal function_label```
     * saves PC + 4 in register ```$ra``` so that when the function returns, the next instruction executed is the one immediately following the ```jal``` instruction 
   * To return from a function: ```jr $ra```
+
+The **run-time stack/call stack** is a region of memory used to temporarily save variables during function calls. The top of the stack is a memory address and stored in the ```$sp``` register ("stack pointer"). When a function is called ```$sp``` is saved in the sense that the callee deallocates its stack frame before returning by adding the same amount it substracted to ```$sp``` at the beginning of the function.
+
+A **non-leaf function** is a function which calls another function. Non-leaf functions must save ```$ra``` along with ```$s``` registers before performing the ```jal```. A **leaf function** is a function that doesn't call another function - they should not preserve ```$ra```.
