@@ -108,10 +108,10 @@ A **non-leaf function** is a function which calls another function. Non-leaf fun
 Suppose you have a machine which executes a program consisting of 50% floating point multiplications, 20% floating point divisions, and the remaining 30% are from other instructions. Management wants the machine to run 4 times faster. You can make the divisions run at most 3 times faster and the multiplications run at most 8 times faster. Can you meet management's goal by making only one improvement, and if so, which one? 
 
 1 = 0.5 + 0.3 + 0.2\ 
-If you make division 3x faster: $0.5 + \frac{0.2}{3} + 0.3 = 0.8667 seconds$\
-$\frac{T_1}{T_2} = \frac{1}{0.8667} = 1.15$\
-If you make multiplication 8x faster: $\frac{0.5}{8} + 0.2 + 0.3 = 0.567 seconds$\
-$\frac{T_1}{T_2} = \frac{1}{0.567} = 1.76$\
+If you make division 3x faster: $0.5 + \frac{0.2}{3} + 0.3 = 0.8667 seconds$  
+$\frac{T_1}{T_2} = \frac{1}{0.8667} = 1.15$  
+If you make multiplication 8x faster: $\frac{0.5}{8} + 0.2 + 0.3 = 0.567 seconds$  
+$\frac{T_1}{T_2} = \frac{1}{0.567} = 1.76$  
 
 #### Question 2
 
@@ -124,13 +124,13 @@ $\frac{100}{8} = \frac{x}{15} + (100-x)$
 A pipelined processor has a clock rate of 5.5 GHz and executes a program with 5 million instructions. The pipeline has 5 stages, and instructions are issued at a rate of one per clock cycle. Ignore penalties due to the branch instructions, and filling and emptying the pipelines. What is the speedup of the process for this program copared to a none-pipelined processor? 
 
 <details>
-  <summary> Answer
-  <p> 5 </p>
+  <summary> Answer </summary>
+  <p> 5 </p> 
+</details>  
 
 #### Question 4
 
-Computer A has an overall CPI of 1.3 and can be run at a clock rate of 3 GHz. Computer B has a CPI of 2.5 and can be run at a clock rate of 2.2 GHz. We have a particular program we wish to run. When compiled for computer A, this program has exactly 100,000 instructions. How many instructions would the program need to have when compiled for Computer B, in order for the two computers to have exactly the same execution time for this program? 
+Computer A has an overall CPI of 1.3 and can be run at a clock rate of 3 GHz. Computer B has a CPI of 2.5 and can be run at a clock rate of 2.2 GHz. We have a particular program we wish to run. When compiled for computer A, this program has exactly 100,000 instructions. How many instructions would the program need to have when compiled for Computer B, in order for the two computers to have exactly the same execution time for this program?  
 
-Machine A = $\frac{I_{total} \times CPI}{frequency}$\
-          = $\frac{100,000 \times 1.3}{3 \times 10^9}$ 
-Machine B = $\frac{x \times 2.5}{2 \times $10^9}$
+Machine A = $\frac{I_{total} \times CPI}{frequency}$ = $\frac{100,000 \times 1.3}{3 \times 10^9}$  
+Machine B = $\frac{x \times 2.5}{2 \times 10^9}$
