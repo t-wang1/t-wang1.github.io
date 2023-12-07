@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Functional Programming"
+title: "Principles of Functional Programming"
 permalink: /notes/functional_programming
 date: 2023-11-28
 author_profile: true
@@ -22,3 +22,4 @@ An **accumulator** is an additional argument to a function, which is meant to st
 
 SML doesn't have an in-built notion of trees, but we can use a **datatype declaration** to achieve this: ```datatype tree = Empty | Node of tree * int * tree```
 
+25:18
