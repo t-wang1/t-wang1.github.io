@@ -8,6 +8,8 @@ author_profile: true
 
 These notes are for CMU's 15-150, the introduction functional programming class taught by Brandon Wu. 
 
+
+
 ### Structural Induction and Tail Recursion 
 
 Lists can be either $[]$ or $x :: xs$, and _nothing more_. 
@@ -22,4 +24,3 @@ An **accumulator** is an additional argument to a function, which is meant to st
 
 SML doesn't have an in-built notion of trees, but we can use a **datatype declaration** to achieve this: ```datatype tree = Empty | Node of tree * int * tree```
 
-25:18

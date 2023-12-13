@@ -69,7 +69,7 @@ MIPS is a **reduced instruction set computer (RISC)**, with a small number of si
       * adds the offset ```0x8``` to the base address ```($0)```
       * result: writes the value in ```$t4``` to memory address 8
 
-There are 3 instruction formats:
+There are three instruction formats:
   1. R-Type: register operands
   2. I-Type: immediate operand
   3. J-Type: jump-type instruction 
@@ -101,36 +101,36 @@ The **run-time stack/call stack** is a region of memory used to temporarily save
 
 A **non-leaf function** is a function which calls another function. Non-leaf functions must save ```$ra``` along with ```$s``` registers before performing the ```jal```. A **leaf function** is a function that doesn't call another function - they should not preserve ```$ra```.
 
-### Performance Problems
+A **datapath** is a set of elements that process data and addresses in the CPU. 
 
-##### Question 1
+Components of a datapath 
+  * PC register
+  * Instruction memory
+  * Register file 
+  * ALUs
+    * Arithmetic/logic operations 
+    * Memory address for load/store
+    * Branch target address
+  * Data memory
 
-Suppose you have a machine which executes a program consisting of 50% floating point multiplications, 20% floating point divisions, and the remaining 30% are from other instructions. Management wants the machine to run 4 times faster. You can make the divisions run at most 3 times faster and the multiplications run at most 8 times faster. Can you meet management's goal by making only one improvement, and if so, which one? 
+In a **single-cycle** implementation of MIPS architecture, each instruction executes in a single cycle. In **pipelined architecture** each instruction is broken up into a series of steps, and multiple instructions execute simultaneously. 
 
-1 = 0.5 + 0.3 + 0.2\ 
-If you make division 3x faster: $0.5 + \frac{0.2}{3} + 0.3 = 0.8667 seconds$  
-$\frac{T_1}{T_2} = \frac{1}{0.8667} = 1.15$  
-If you make multiplication 8x faster: $\frac{0.5}{8} + 0.2 + 0.3 = 0.567 seconds$  
-$\frac{T_1}{T_2} = \frac{1}{0.567} = 1.76$  
+MIPS datapath can be pipelined with five stages:
 
-#### Question 2
+  1. IF: Instruction fetch from memory
+  2. ID: Instruction decode and register read
+  3. EX: Execute operation or calculate address
+  4. MEM: Access memory operand 
+  5. WB: Write result back to register
 
-Suppose that we can improve the floating point instruction performance of a machine by a factor of 15 (the same floating point instructions run 15 times faster on this new machine). What percent of the instructions must be floating point to achieve a speedup of at least 8? 
+A **hazard** is a situation that prevents an instruction from executing a pipeline stage in the next cycle. 
 
-$\frac{100}{8} = \frac{x}{15} + (100-x)$
+There are three types of hazards:
+  1. Data hazards: an instruction needs to wait for another executing instruction to complete its data read/write
+  2. Structure hazards: a hardware structure required by an instruction is being used by another executing instruction 
+  3. Control hazards: deciding the next instruction to fetch depends on the outcome of another executing instruction 
 
-#### Question 3
-
-A pipelined processor has a clock rate of 5.5 GHz and executes a program with 5 million instructions. The pipeline has 5 stages, and instructions are issued at a rate of one per clock cycle. Ignore penalties due to the branch instructions, and filling and emptying the pipelines. What is the speedup of the process for this program copared to a none-pipelined processor? 
-
-<details>
-  <summary> Answer </summary>
-  <p> 5 </p> 
-</details>  
-
-#### Question 4
-
-Computer A has an overall CPI of 1.3 and can be run at a clock rate of 3 GHz. Computer B has a CPI of 2.5 and can be run at a clock rate of 2.2 GHz. We have a particular program we wish to run. When compiled for computer A, this program has exactly 100,000 instructions. How many instructions would the program need to have when compiled for Computer B, in order for the two computers to have exactly the same execution time for this program?  
-
-Machine A = $\frac{I_{total} \times CPI}{frequency}$ = $\frac{100,000 \times 1.3}{3 \times 10^9}$  
-Machine B = $\frac{x \times 2.5}{2 \times 10^9}$
+Solutions:
+  1. **Stall** the instruction until the data hazard is gone 
+  2. **Forwarding**: result can be used as soon as its computed without waiting for it to be stored in a register
+    * cannot always avoid stalls by forwarding (ex. the result of ```lw``` isn't available until after the MEM stage)
