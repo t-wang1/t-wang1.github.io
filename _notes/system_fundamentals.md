@@ -10,7 +10,7 @@ These notes for CSE 220: System Fundamentals 1 taught by Dr. Abid Malik
 
 ### Resources/Links
   * [Converting Between Decimal and Binary Floating Point Numbers](https://kyledewey.github.io/comp122-fall17/lecture/week_2/floating_point_interconversions.html)
-  * [Declaraing Arrays in MIPS](https://www.cse.unsw.edu.au/~cs1521/17s2/lecs/week06/notes.html)
+  * [MIPS Reference Sheet](https://inst.eecs.berkeley.edu/~cs61c/resources/MIPS_help.html)
 
 ### Machine Representation of Data
 
@@ -28,10 +28,10 @@ IEEE 754 is the industry standard way of approximating real numbers. There are t
   * fraction/mantissa: contains the digits to the right of the binary point (23 bits for 32-bit version and 52 bits for 64-bit version)
 
 To convert from IEEE 754 to decimal you can use the following formula $$(-1)^s \times 2^{e-bias} \times (1+f)$$ where:
-  * $$s$$ is the sign bit (0/1) 
-  * $$e$$ is the decimal value of the exponent field
+  * $s$ is the sign bit (0/1) 
+  * $e$ is the decimal value of the exponent field
   * $$\text{bias}$$ is 127 for single precision, 1023 for double precision
-  * f is the decimal value of the fraction field
+  * $f$ is the decimal value of the fraction field
 
 ### C Programming 
 
@@ -126,11 +126,12 @@ MIPS datapath can be pipelined with five stages:
 A **hazard** is a situation that prevents an instruction from executing a pipeline stage in the next cycle. 
 
 There are three types of hazards:
-  1. Data hazards: an instruction needs to wait for another executing instruction to complete its data read/write
-  2. Structure hazards: a hardware structure required by an instruction is being used by another executing instruction 
-  3. Control hazards: deciding the next instruction to fetch depends on the outcome of another executing instruction 
+  1. **Data hazards**: an instruction needs to wait for another executing instruction to complete its data read/write
+  2. **Structure hazards**: a hardware structure required by an instruction is being used by another executing instruction 
+  3. **Control hazards**: deciding the next instruction to fetch depends on the outcome of another executing instruction 
 
 Solutions:
   1. **Stall** the instruction until the data hazard is gone 
   2. **Forwarding**: result can be used as soon as its computed without waiting for it to be stored in a register
-    * cannot always avoid stalls by forwarding (ex. the result of ```lw``` isn't available until after the MEM stage)
+
+You cannot always avoid stalls by forwarding (ex. the result of ```lw``` isn't available until after the MEM stage)
