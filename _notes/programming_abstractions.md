@@ -84,17 +84,16 @@ Consider the term $t$ given by $(\lambda x.(\lambda y. x(z y)))y$:
 
 ### OCaml
 
-Functions that use nesting of lambda abstractions to take multiple parameters are called _curried functions_. _Wildcards_ are useful 
+List Functions:
 
-<details>
-    <summary> What's the function of an accumulator? When do you use it? </summary>
-    <p> Accumulators are used when you want to accumulate results while processing elements in an recursive function. It's utilized in situations like aggregating values and filtering. </p>
-</details>
-
-<details>
-  <summary> What does the List.fold_left function do? </summary>
-  <p> It iterates over the elements of a list, applies a given function to an element, and accumulates the result. </p>
-</details>
+  * ```List.map f [a1; ...; an] = [f a1; ...; f an]```
+    * Apply a function ```f``` to each element of a list to transform it
+  * ```List.fold_left f a [b1; ...; bn] = f(...(f(f a1 b1) b2)...) bn)```
+    * Apply a function ```f``` recursively to the current result together with an element of the list, to finally produce a single element
+  * ```List.iter f [a1; ...; an] = begin f a1; ...; f an; () end```
+    * Apply a function ```f``` to each element of a list, to produce unit as the result
+  * ```List.rev [a1; ...; an] = [an; ...; a1]```
+    * Reverses a list 
 
 ### Names, Scopes, and Binding
 
@@ -104,10 +103,23 @@ Early binding time leads to greater efficiency while later binding time leads to
 
 The textual region in which a binding is active is its _scope_. Languages where the scope of a binding is determined at compile-time are called _statically/lexically scoped languages_. A variable is said to be _shadowed_ when a variable declared within a certain scope has the same name as a variable declared in an outer scope.
 
-
 ### Data Types
 
 There are multiple ways to think about data types. In the _denotational semantics approach_, we can implicitly picture values from a domain. In the _structural semantics approach_, complex structures are described in terms of simpler constituents. 
+
+A **type system** of a programming language is a set of rules that assigns a data type to the constructs of a program in that language. It provides a set of rules for (a)type equivalence, (b)type compatability, and (c)type inference. **Type checking** is the process of verifying and enforcing the rules of type safety in a program. 
+
+There are two possible approaches for determining type equivalence:
+  1. Name equivalence: two types are equal if and only if they have the same constructor expression (ex. they are bound to the same name)
+  2. Structural equivalence: two types are equal if and only if they have the same "structure"
+
+Name equivalence can be 
+  1. strict (aliased types are considered to be distinct) 
+  2. loose (aliased types are considered to be equivalent)
+
+A **derived type/subtype** is **type compatible** with its parent type. This way, we have a one-sided "is-a" relation instead of complete type equivalence. 
+
+The function ```fun x y -> x * y``` has the type ```int -> (int -> int) ```. That is, a function that takes an ```int```, and returns a function of the type ```int -> int```. This type of evaluation of a function that takes multiple arguments as evaluating a sequence of functions, each with a single argument, is called **currying**. 
 
 Types can be divided into scalar and composite types. A _scalar type_ is a type whose values occupy a fixed amount of memory and are atomic: not subdivided further in any way. A _composite type_ is a type whose values are composed of simpler component values. Each component can be scalar or composite. 
 

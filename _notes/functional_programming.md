@@ -8,7 +8,7 @@ author_profile: true
 
 These notes are for CMU's 15-150, the introduction functional programming class taught by Brandon Wu. 
 
-###
+### Functional Programming
 
 Functional programming **avoids modification of state**. It can be characterized by three theses:
 1. Recursive problems, recursive solutions
@@ -17,9 +17,11 @@ Functional programming **avoids modification of state**. It can be characterized
 
 A function is pure if it doesn't have observable side effects, and always returns the same outputs, given the same inputs. 
 
-We use $\Rightarrow$ to denote **stepping/reducing** of expressions, which means to simply an expression by one step. We use $\Rightarrow^* $ to denote the application of the $\Rightarrow$ relation an arbitrary number of times, usually until completion. So the expression $5 * 4 \Rightarrow 20$, and the expression $(2 + 3) * 4 \Rightarrow^* 20$  
+We use $\Rightarrow$ to denote **stepping/reducing** of expressions, which means to simply an expression by one step. We use $\Rightarrow^* $ to denote the application of the $\Rightarrow$ relation an arbitrary number of times, usually until completion. So the expression $5 * 4 \Rightarrow 20$, and the expression $(2 + 3) * 4 \Rightarrow^* 20$.   
 
+If an expression $e$ eventually reduces down to value $v$, we can say $e \righthookarrow v$. We then say $e$ is **valuable**. 
 
+A **type** is a specification of the behavior of a piece of code. It predicts what a program is allowed to do. In a **statically typed** language, all typing rules are applied before the program is ever run. 
 
 ### Structural Induction and Tail Recursion 
 
