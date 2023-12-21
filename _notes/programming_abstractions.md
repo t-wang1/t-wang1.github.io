@@ -107,7 +107,7 @@ The textual region in which a binding is active is its _scope_. Languages where 
 
 There are multiple ways to think about data types. In the _denotational semantics approach_, we can implicitly picture values from a domain. In the _structural semantics approach_, complex structures are described in terms of simpler constituents. 
 
-A **type system** of a programming language is a set of rules that assigns a data type to the constructs of a program in that language. It provides a set of rules for (a)type equivalence, (b)type compatability, and (c)type inference. **Type checking** is the process of verifying and enforcing the rules of type safety in a program. 
+A **type system** of a programming language is a set of rules that assigns a data type to the constructs of a program in that language. It provides a set of rules for (a) type equivalence, (b) type compatability, and (c) type inference. **Type checking** is the process of verifying and enforcing the rules of type safety in a program. 
 
 There are two possible approaches for determining type equivalence:
   1. Name equivalence: two types are equal if and only if they have the same constructor expression (ex. they are bound to the same name)
@@ -144,3 +144,10 @@ Parametric polymorphism allows us to have a generic way of handling values witho
 Casting up along the type hierarchy is known as _upcasting/broadening conversion_. The opposite is known as _downcasting/narrowing conversion_. It's "easier" to upcast than downcast since the "is-a" relation only goes upward; downcasting can't be done implicitly since there's a possibility that the type might not downcast to the right subtype. 
 
 The _diamond problem_ occurs when a method call results in ambiguity from the parent classes; this is only seen in languages that support multiple inheritance. 
+
+### Java Functional Elements and Evaluations 
+
+* The ```stream()``` method converts a traditional iterable object into a ```Stream<T>``` object
+* The ```filter()``` method applies a boolean function to every element of a stream, letting through only those elements that evaluate to true 
+* The ```map()``` method applies a transformation to every element of a stream 
+* The ```reduce()``` method uses an initial value uses an initial value and accumulates elements from the stream as specified by a function that takes in two parameters
