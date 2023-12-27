@@ -33,9 +33,11 @@ If we called ```foo 1 ``` the imperative answer would be 5, but the answer SML p
 
 Two expressions of the same type are said to be **extensionally equivalent** if they evaluate to the same value, both loop forever, or both raise the same kind of exception. For example, $2 + 2 \cong 4 \cong 1 + 3$. Reduction implies equivalence. 
 
-We say that ```f : t1``` $\Rightarrow$ ```t2``` is **total** if for all values ```v : t1```, there is a value ```v' : t2``` such that ```f v ``` $\righthookarrow$ ```v'```
+We say that ```f : t1``` $\Rightarrow$ ```t2``` is **total** if for all values ```v : t1```, there is a value ```v' : t2``` such that ```f v ``` $\rhookrightarrow$ ```v'```
 
-### Structural Induction and Tail Recursion 
+### Induction and Recursion 
+
+Recursion is about using the answers to sub-problems to solve a bigger one. Induction is about using the inductive assumption to prove the $n + 1$ case. 
 
 Lists can be either $[]$ or $x :: xs$, and _nothing more_. 
 
@@ -61,3 +63,6 @@ A **type constructor** is something which makes a type out of other types.
 
 ### Asymptotic Analysis
 
+**Parallelism** is when a process is able to execute some of its tasks at the same time. When computing in parallel, some tasks have **dependencies**, meaning they cannot be completed until other tasks are finished. 
+
+The **work** of a process is the time expended using a single processor. The **span** of a process is the time expended using infinitely many processors. 
