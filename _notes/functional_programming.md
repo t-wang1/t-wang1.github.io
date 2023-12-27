@@ -8,7 +8,7 @@ author_profile: true
 
 These notes are for CMU's 15-150, the introduction functional programming class taught by Brandon Wu. 
 
-### Functional Programming
+### Equivalence, Binding, and Scope
 
 Functional programming **avoids modification of state**. It can be characterized by three theses:
 1. Recursive problems, recursive solutions
@@ -19,9 +19,21 @@ A function is pure if it doesn't have observable side effects, and always return
 
 We use $\Rightarrow$ to denote **stepping/reducing** of expressions, which means to simply an expression by one step. We use $\Rightarrow^* $ to denote the application of the $\Rightarrow$ relation an arbitrary number of times, usually until completion. So the expression $5 * 4 \Rightarrow 20$, and the expression $(2 + 3) * 4 \Rightarrow^* 20$.   
 
-If an expression $e$ eventually reduces down to value $v$, we can say $e \righthookarrow v$. We then say $e$ is **valuable**. 
+If an expression $e$ eventually reduces down to value $v$, we can say $e \hookrightarrow v$. We then say $e$ is **valuable**. 
 
 A **type** is a specification of the behavior of a piece of code. It predicts what a program is allowed to do. In a **statically typed** language, all typing rules are applied before the program is ever run. 
+
+**Binding** is the act of producing a new association of a value to a variable name. Binding is not assignment. A function only knows about what was in the environment when it was bound. It doesn't see any bindings that happen later. 
+
+```val x : int = 2```  
+```fun foo (y : int) : int = x + y```  
+```val x : int = 4```  
+
+If we called ```foo 1 ``` the imperative answer would be 5, but the answer SML provides would be 3 since after the first binding of x, we have the environment [2/x]. Future bindings won't change this. 
+
+Two expressions of the same type are said to be **extensionally equivalent** if they evaluate to the same value, both loop forever, or both raise the same kind of exception. For example, $2 + 2 \cong 4 \cong 1 + 3$. Reduction implies equivalence. 
+
+We say that ```f : t1``` $\Rightarrow$ ```t2``` is **total** if for all values ```v : t1```, there is a value ```v' : t2``` such that ```f v ``` $\righthookarrow$ ```v'```
 
 ### Structural Induction and Tail Recursion 
 
@@ -44,3 +56,8 @@ Let $P$ be a theorem on values ```v : tree```. We would like to show that, for a
 It suffices to show that:
 * $P(Empty)$ holds 
 * Assuming that $P(L)$ and $P(R)$ hold for some ```L, R : tree```, show that $P(Node(L, x, R))$ holds for an arbitrary ```x : int```. 
+
+A **type constructor** is something which makes a type out of other types. 
+
+### Asymptotic Analysis
+
