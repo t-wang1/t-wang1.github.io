@@ -42,14 +42,14 @@ $\alpha$ should have the following properties:
 
 Incremental computation aims to improve the efficiency of computations that deal with changing inputs by reusing previously computed results. These can be categorized in three main ways:
 
-1) **Incremental Algorithms**: These are algorithms designed for specific tasks (ex. finding the shortest path)
-2) **Incremental Program-Evaluation Frameworks**: These are frameworks that can adapt to input changes using strategies like memoization and caching
+1) **Incremental Algorithms**: These are algorithms designed for specific tasks (ex. finding the shortest path)  
+2) **Incremental Program-Evaluation Frameworks**: These are frameworks that can adapt to input changes using strategies like memoization and caching  
 3) **Incremental Algorithm and Program Derivation Methods**: These methods handle changing inputs by building upon existing solutions like finite differencing and incrementalization
 
 Incremental computation is closely related to partial evaluation, especially when we see how it connects compiliers to interpreters. 
 
-1) $PE(interp, prog)$ yields $interp_(prog)$ which functions like a compiled program for $prog$
-2) $PE(PE, interp)$ yields $PE_(interp)$ which is like a compiler 
+1) $PE(interp, prog)$ yields $interp_(prog)$ which functions like a compiled program for $prog$  
+2) $PE(PE, interp)$ yields $PE_(interp)$ which is like a compiler  
 3) $PE(PE, PE)$ yields $PE_(PE)$ which is like a compiler generator
 
 ### Related Topics 
