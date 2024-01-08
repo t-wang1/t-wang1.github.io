@@ -8,6 +8,9 @@ author_profile: true
 
 These notes are for CMU's 15-150, the introduction functional programming class taught by Brandon Wu. 
 
+### Resources/Links
+* [Software Foundations Textbook](https://softwarefoundations.cis.upenn.edu/lf-current/toc.html) 
+
 ### Equivalence, Binding, and Scope
 
 Functional programming **avoids modification of state**. It can be characterized by three theses:
@@ -66,3 +69,7 @@ A **type constructor** is something which makes a type out of other types.
 **Parallelism** is when a process is able to execute some of its tasks at the same time. When computing in parallel, some tasks have **dependencies**, meaning they cannot be completed until other tasks are finished. 
 
 The **work** of a process is the time expended using a single processor. The **span** of a process is the time expended using infinitely many processors. 
+
+### Higher-Order Functions
+
+A **higher-order function** is a function which takes in functions or returns functions. **Partial application** is the act of applying _some_ of the curried arguments to a curried function, but not all. 

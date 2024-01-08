@@ -9,7 +9,6 @@ author_profile: true
 These notes are for [CSE 216: Programming Abstractions](https://sites.google.com/cs.stonybrook.edu/cse216/) taught by Dr. Ritwik Banerjee and are supplemented by material from NYU's Programming Languages class taught by Dr. Thomas Wies.
 
 ### Resources/Links
-
   * [Folding and Tail Recursion](https://www.cs.cornell.edu/courses/cs3110/2014sp/recitations/5/folding.html)
 
 ### Syntax and Parsing
