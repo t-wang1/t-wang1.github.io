@@ -3,7 +3,6 @@ layout: archive
 title: "CSE 216 / Programming Abstractions"
 permalink: /notes/programming_abstractions
 date: 2023-09-02
-author_profile: true
 ---
 
 These notes are for [CSE 216: Programming Abstractions](https://sites.google.com/cs.stonybrook.edu/cse216/) taught by Dr. Ritwik Banerjee and are supplemented by material from NYU's Programming Languages class taught by Dr. Thomas Wies.

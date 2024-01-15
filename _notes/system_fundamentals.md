@@ -3,7 +3,6 @@ layout: archive
 title: "CSE 220 / System Fundamentals I"
 permalink: /notes/system_fundamentals
 date: 2023-09-02
-author_profile: true
 ---
 
 These notes for CSE 220: System Fundamentals 1 taught by Dr. Abid Malik

@@ -3,7 +3,6 @@ layout: archive
 title: "15-150 / Principles of Functional Programming"
 permalink: /notes/functional_programming
 date: 2023-11-28
-author_profile: true
 ---
 
 These notes are for CMU's 15-150, the introduction functional programming class taught by Brandon Wu. 
@@ -73,3 +72,22 @@ The **work** of a process is the time expended using a single processor. The **s
 ### Higher-Order Functions
 
 A **higher-order function** is a function which takes in functions or returns functions. **Partial application** is the act of applying _some_ of the curried arguments to a curried function, but not all. 
+
+### Combinators and Staging 
+
+Each curried argument represents a specialization of a function. **Staging** describes the act of deliberately placing computations at certain points with respect to receiving curried arguments.
+
+The pipe operator allows us to reverse the order of function application as is defined as ```fun x |> f = f x```. Thus, we could rewrite ```foo ( bar( qux( baz x)))``` as ```x |> baz |> qux |> bar |> foo```.
+
+### Continuation-Passing Style
+
+Instead of piping, we can write CPS functions. Rather than ```f x |> k``` we can do ```f' x``` which is extensionally equivalent to ```k(f x)```
+
+A **continuation** is a function taken in as an argument, which denotes what to do _after_ the current computation. For instance, the declaration ```fun mapCool f L k = map f L |> k``` has the function ```k``` as a continuation, because it passes its return value directly to the continuation function. This is _not_ a continuation passing style function though. 
+
+A function is in **continuation-passing style** if it fulfills the following criteria:
+* it takes in and uses continuations
+* it makes calls to other functions with continuations (including itself) as tail calls 
+* it only calls continuations as tail calls
+    * ex. you can't do ```k (x + y) + 2``` since it would constrain the output type of continuation ```k```
+

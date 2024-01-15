@@ -3,7 +3,6 @@ layout: archive
 title: "NYSRG / Compilers Compiling Compilers"
 permalink: /notes/nysrg
 date: 2024-1-7
-author_profile: true
 ---
 
 These notes are an attempt to articulate the ideas that were discussed at NYSRG Week 13. 
@@ -35,7 +34,7 @@ After the partial evaluation, $\alpha(\alpha, int)$ can be thought of as a compi
 
 $\alpha$ should have the following properties:
 
-1) $\alpha$ should simplify as much of the computation process $\pi$ as it can using the values provided for partial evaluation variables
+1) $\alpha$ should simplify as much of the computation process $\pi$ as it can using the values provided for partial evaluation variables  
 2) $\alpha$ should avoid simplifying parts of $\pi$ that won't affect the final result when the generated computation process is eventually evaluated with the remaining variable values
 
 ### Essence of Incremental Computation 
