@@ -91,3 +91,27 @@ A function is in **continuation-passing style** if it fulfills the following cri
 * it only calls continuations as tail calls
     * ex. you can't do ```k (x + y) + 2``` since it would constrain the output type of continuation ```k```
 
+### Modules 
+
+A **namespace** is a particular group of defined elements which live separately from others. In a programming language, there will usually be ways of referring to different namespaces, to separate out used names from each other. We could have definitions of the same functions that belong in different namespaces (ex. ```Int.compare``` and ```List.compare```). List and Int are examples of modules or structures. A **module/structure** is a grouping of declarations underneath a particular name. Structures do not have types because they live outside the language of values and types.
+
+The act of specifying that a module should implement a given signature is called **ascription**. After ascription, the only declarations that are visible within the module are declarations contained within the signature. **Opaque ascription** is transparent ascription, but any abstract types in the signature are unknown to users of the structure. 
+
+A **type class** is the signature which describes a type, and operations which may be performed on that type. Structures which ascribe to a type class are **instances** of that type class. 
+
+```
+functor Name (type t
+              val x : int) =
+    struct 
+    (* ... *)
+    end
+```
+
+Functors can only take in one structure. The syntax above defines a functor, which takes in an _unnamed structure_ which ascribes to the signature: 
+
+```
+sig
+    type t
+    val x : int 
+end
+```
