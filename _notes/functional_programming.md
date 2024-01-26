@@ -27,9 +27,11 @@ A **type** is a specification of the behavior of a piece of code. It predicts wh
 
 **Binding** is the act of producing a new association of a value to a variable name. Binding is not assignment. A function only knows about what was in the environment when it was bound. It doesn't see any bindings that happen later. 
 
-```val x : int = 2```  
-```fun foo (y : int) : int = x + y```  
-```val x : int = 4```  
+```
+val x : int = 2 
+fun foo (y : int) : int = x + y  
+val x : int = 4
+```  
 
 If we called ```foo 1 ``` the imperative answer would be 5, but the answer SML provides would be 3 since after the first binding of x, we have the environment [2/x]. Future bindings won't change this. 
 
