@@ -76,3 +76,15 @@ When you query something, the key could be the actual row in question, or it cou
 A _concatenated index_ is a type of multi-column index that combines several fields into one key by appending one column to another. 
 
 Disks have two advantages compared to main memory: they're durable (their contents aren't lost if the power is turned off), and they have a lower cost per gigabyte.
+
+### Replication
+
+The difficulty in replication lies in handling _changes_ to replicated data. There are three popular algorithms for handling these scenarios:
+
+1. Single-leader replication
+2. Multi-leader replication
+3. Leaderless replication
+
+In leader-based replication, a replica is designated as the leader; when clients want to write to the database, they have to send their requests to the leader which writes the new data to its local storage and sends it to the other replicas (known as followers) via a _replication log_ or _change stream_. The followers then update its local copy of the data accordingly. 
+
+Replication can happen either synchronously or asynchronously. In synchronous replication, the leader waits until the follower has confirmed that it's received the write before reporting success to the client. In asynchronous replication, the leader sends the message, but doesn't wait for a response from the follower. 
