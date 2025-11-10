@@ -9,8 +9,8 @@ main:
   - title: "Projects"
     url: /projects/    
     
-  - title: "Service"
-    url: /service/
+  # - title: "Service"
+  #   url: /service/
         
   # - title: "Blog Posts"
   #  url: /year-archive/
@@ -19,4 +19,4 @@ main:
   #  url: /cv/
     
   # - title: "Guide"
-  #  url: /markdown/
+  #  url: /markdo
