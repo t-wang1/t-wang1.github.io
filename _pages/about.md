@@ -8,7 +8,11 @@ redirect_from:
   - /about.html
 ---
 
-I’m a sophomore at Stony Brook University majoring in Computer Science and Applied Mathematics & Statistics. I'm interested in programming languages and functional programming. My research in the [Automotive Ethics Lab](https://www.stonybrook.edu/commcms/vertically-integrated-projects/teams/_team_page/team_page.php?team=Automotive%20Ethics) involves establishing edge cases that test autonomous vehicle against distinct ethical theories.
+I’m a senior at Stony Brook University studying Computer Science with a concentration in Artificial Intelligence.
+
+When I first decided I wanted to pursue Computer Science, I thought all Software Engineers created web applications. It had never occurred to me that there were so facets of Computer Science beyond what users interact with. I became fascinated by the intricacies of simple things that we often overlook, like how Netflix can load one specific movie out of the thousands it has in its server in under a few milliseconds. Learning about systems, and how they’re the fundamental building blocks of any applications changed how I viewed software engineering. 
+
+Towards that end, I’m currently interested in learning more about distributed systems.
 
 ### What's This?
 
