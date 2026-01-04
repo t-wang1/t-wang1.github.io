@@ -1,22 +1,7 @@
 # main links links
 main:
   - title: "Notes"
-    url: /notes/
-
-  - title: "Writings"
-    url: /writings/    
+    url: /notes/   
 
   - title: "Projects"
-    url: /projects/    
-    
-  # - title: "Service"
-  #   url: /service/
-        
-  # - title: "Blog Posts"
-  #  url: /year-archive/
-    
-  # - title: "CV"
-  #  url: /cv/
-    
-  # - title: "Guide"
-  #  url: /markdo
+    url: /projects/

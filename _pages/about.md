@@ -10,13 +10,9 @@ redirect_from:
 
 I’m a senior at Stony Brook University studying Computer Science with a concentration in Artificial Intelligence.
 
-When I first decided I wanted to pursue Computer Science, I thought all Software Engineers created web applications. It had never occurred to me that there were so facets of Computer Science beyond what users interact with. I became fascinated by the intricacies of simple things that we often overlook, like how Netflix can load one specific movie out of the thousands it has in its server in under a few milliseconds. Learning about systems, and how they’re the fundamental building blocks of any applications changed how I viewed software engineering. 
-
-Towards that end, I’m currently interested in learning more about distributed systems.
-
 ### What's This?
 
-This website serves as a repository for any notes, projects, and writings. Additionally, I'm a believer that writing helps crystallizes thoughts and ideas and so this is a medium through which I can practice those skills. 
+This site serves as a repository for any notes, projects, and writings. I'm a firm believer that writing helps crystallize thoughts and ideas and so this is a medium through which I can practice those skills. 
 
 ### Mindset
 
