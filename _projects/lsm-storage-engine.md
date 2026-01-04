@@ -6,6 +6,8 @@ date: 2026-04-1
 author_profile: true
 ---
 
+A [LSM-based storage engine](https://github.com/t-wang1/mini-LSM) implemented in Rust
+
 ### Overview
 
 Log structured merge trees are data structures that maintain key-value pairs. 
@@ -21,14 +23,20 @@ To apply an update operation, we write the key-value pair to the WAL and the mem
 <details>
     <summary> What’s the difference between RAM and disk? </summary>
     RAM is fast, temporary storage accessible by the CPU. There’s no persistence so data is lost when the power is off. In comparison, the disk is slower but has more permanent storage. 
+</details>
 
+<details>
     <summary> Why is batching and merging more efficient than in-place updates? </summary>
     Because the entire memtable gets flushed sequentially once filled, it’s much faster than the random I/O that would occur if you overwrote the disk space each time you wanted to update value.   
+</details>
 
+<details>
     <summary> What’s the difference between leveled compaction and tiered compaction? </summary>
     In level compaction, we maintain the invariant that each level (besides L0) has sorted SSTables. This results in better read performance since there are no duplicate keys. 
     In tiered compactions, key can overlap anywhere within a level. This results in less heavy CPU operations and disk bandwidth.
+</details>
 
+<details>
     <summary> What’s the difference between a read/write lock and a mutex? </summary>
-    In a mutex, only one thread can access at a time. In a read/write lock, you can either have multiple readers or one writer. 
+    In a mutex, only one thread can access at a time. In a read/write lock, you can either have multiple readers or one writer.
 </details>
