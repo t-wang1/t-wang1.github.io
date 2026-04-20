@@ -1,0 +1,127 @@
+// _sass/custom.scss — Version 2: Sleek, Minimal & Elegant
+
+// Import fonts (add to _includes/head/custom.html):
+// <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+
+$plum-dark: #1a1118;
+$rose-mid: #c4778a;
+$rose-light: #f5e6ed;
+$rose-muted: #9a7d8a;
+
+body {
+  font-family: 'Inter', -apple-system, sans-serif;
+  background: #fdf8fb;
+  color: $plum-dark;
+}
+
+// Nav
+.masthead {
+  background: $plum-dark;
+  border-bottom: 0.5px solid #3a2d35;
+
+  a, .masthead__menu-item {
+    color: $rose-muted !important;
+    font-size: 0.8rem;
+    letter-spacing: 0.05em;
+    text-transform: lowercase;
+    &:hover { color: #e8dde5 !important; }
+  }
+
+  .site-title {
+    color: #e8dde5 !important;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+  }
+}
+
+// Sidebar
+.sidebar {
+  .author__name {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    font-size: 1.3rem;
+    letter-spacing: 0.05em;
+    color: $plum-dark;
+  }
+  .author__bio {
+    font-size: 0.8rem;
+    color: $rose-muted;
+    font-style: italic;
+  }
+  .author__avatar img {
+    border-radius: 6px;
+  }
+}
+
+// Page content
+.page__title {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 300;
+  font-size: 2rem;
+  letter-spacing: 0.02em;
+  color: $plum-dark;
+}
+
+.page__content {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: #3a2d35;
+}
+
+// Links
+a {
+  color: $plum-dark;
+  text-decoration: underline;
+  text-decoration-color: $rose-mid;
+  text-underline-offset: 3px;
+  &:hover {
+    color: $rose-mid;
+    text-decoration-color: $rose-mid;
+  }
+}
+
+// Archive/project cards
+.archive__item-title {
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: $plum-dark;
+  &::before {
+    content: '·';
+    color: $rose-mid;
+    margin-right: 0.4rem;
+  }
+}
+.archive__item-excerpt {
+  font-size: 0.8rem;
+  color: $rose-muted;
+  font-style: italic;
+}
+
+// Tags
+.page__taxonomy-item {
+  background: $rose-light;
+  color: #9a5070;
+  border: none;
+  border-radius: 3px;
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+}
+
+// Horizontal rule → fades out
+hr {
+  border: none;
+  height: 0.5px;
+  background: linear-gradient(to right, $rose-mid, transparent);
+  margin: 1.5rem 0;
+}
+
+// Footer
+.page__footer {
+  background: $plum-dark;
+  color: $rose-muted;
+  font-size: 0.75rem;
+  border-top: 0.5px solid #3a2d35;
+}
