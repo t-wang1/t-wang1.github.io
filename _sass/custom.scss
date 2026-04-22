@@ -147,3 +147,54 @@ hr {
   gap: 1.25rem;
   margin-top: 1rem;
 }
+
+.project-card {
+  background: #1e1520;
+  border: 0.5px solid #3a2d35;
+  border-radius: 8px;
+  overflow: hidden;
+
+  &__image img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+    opacity: 0.75;
+  }
+
+  &__body {
+    padding: 1.1rem 1.25rem;
+  }
+
+  &__title {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #e8dde5;
+    margin: 0 0 0.5rem;
+  }
+
+  &__excerpt {
+    font-size: 0.8rem;
+    color: #9a7d8a;
+    line-height: 1.6;
+    margin-bottom: 0.85rem;
+  }
+
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 0.85rem;
+  }
+
+  &__links {
+    display: flex;
+    gap: 12px;
+    a {
+      color: #9a7d8a;
+      font-size: 1rem;
+      text-decoration: none;
+      &:hover { color: #e8dde5; }
+    }
+  }
+}

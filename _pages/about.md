@@ -16,6 +16,17 @@ Aside from coding, you can usually find me hunting for the best lattes in NYC, e
 
 <h2 class = "projects-heading"> Projects </h2>
   <div class = "project-grid"></div>
-  {% for project.site._projects % }
+  {% for project in site.projects % }
     <div class = "project-card"></div> 
   {% endfor % }
+  <div class = "project-card__body">
+    <h3 class = "project-card__title">{{ project.title }}</h3>
+    <p class = "project-card__exercpt">{{ project.exercept }}</p>
+    <div class = "project-card__links">
+      { % if project.github % }
+      <a href="{{ project.github }}" target="_blank" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+      </a>
+      { % endif % }
+    </div>
+  </div>
