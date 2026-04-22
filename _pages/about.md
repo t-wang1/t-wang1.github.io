@@ -14,19 +14,27 @@ I have experience building a wide range of projects, from database engines and f
 
 Aside from coding, you can usually find me hunting for the best lattes in NYC, expanding my fragrance collection, or planning trips to explore new cities! 
 
-<h2 class = "projects-heading"> Projects </h2>
-  <div class = "project-grid"></div>
-  {% for project in site.projects % }
-    <div class = "project-card"></div> 
-  {% endfor % }
-  <div class = "project-card__body">
-    <h3 class = "project-card__title">{{ project.title }}</h3>
-    <p class = "project-card__exercpt">{{ project.exercept }}</p>
-    <div class = "project-card__links">
-      { % if project.github % }
-      <a href="{{ project.github }}" target="_blank" aria-label="GitHub">
-            <i class="fab fa-github"></i>
-      </a>
-      { % endif % }
+<h2 class="projects-heading">Projects</h2>
+
+<div class="project-grid">
+  {% for project in site.projects %}
+  <div class="project-card">
+    <div class="project-card__body">
+      <h3 class="project-card__title">{{ project.title }}</h3>
+      <p class="project-card__excerpt">{{ project.excerpt }}</p>
+      <div class="project-card__tags">
+        {% for tag in project.tags %}
+        <span class="project-tag">{{ tag }}</span>
+        {% endfor %}
+      </div>
+      <div class="project-card__links">
+        {% if project.github %}
+        <a href="{{ project.github }}" target="_blank" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        {% endif %}
+      </div>
     </div>
   </div>
+  {% endfor %}
+</div>
