@@ -3,6 +3,14 @@ $rose-mid: #c4778a;
 $rose-light: #f5e6ed;
 $rose-muted: #9a7d8a;
 
+html {
+  background: #1a1118;
+}
+
+.initial-content {
+  background: #fdf8fb;
+}
+
 body {
   font-family: 'Inter', -apple-system, sans-serif;
   background: #fdf8fb;
@@ -122,4 +130,20 @@ hr {
   color: $rose-muted;
   font-size: 0.75rem;
   border-top: 0.5px solid #3a2d35;
+}
+
+.projects-heading {
+  font-family: 'Inter', -apple-system, sans-serif;
+  font-weight: 300;
+  font-size: 1.6rem;
+  color: #1a1118;
+  margin: 2.5rem 0 1.25rem;
+  letter-spacing: 0.02em;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  margin-top: 1rem;
 }

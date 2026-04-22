@@ -13,3 +13,9 @@ I'm a senior at Stony Brook University studying Computer Science with a concentr
 I have experience building a wide range of projects, from database engines and full-stack web applications to AI-powered microservices. I'm constantly exploring new technologies and drawn to complex challenges that require balancing performance with correctness. 
 
 Aside from coding, you can usually find me hunting for the best lattes in NYC, expanding my fragrance collection, or planning trips to explore new cities! 
+
+<h2 class = "projects-heading"> Projects </h2>
+  <div class = "project-grid"></div>
+  {% for project.site._projects % }
+    <div class = "project-card"></div> 
+  {% endfor % }
