@@ -221,3 +221,38 @@ hr {
     }
   }
 }
+
+.tech-inline {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  margin-bottom: 2rem;
+
+  &__row {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+  }
+
+  &__label {
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #9a7d8a;
+    width: 100px;
+    flex-shrink: 0;
+  }
+
+  &__items {
+    font-size: 0.82rem;
+    color: #3a2d35;
+    letter-spacing: 0.01em;
+  }
+}
+
+.tech-dot {
+  color: #c4778a;
+  margin: 0 4px;
+  font-size: 0.6rem;
+  vertical-align: middle;
+}

@@ -40,3 +40,21 @@ Aside from coding, you can usually find me hunting for the best lattes in NYC, e
   </div>
   {% endfor %}
 </div>
+
+<hr> 
+
+<h2 class="section-heading">Technologies</h2>
+<div class="tech-inline">
+  <div class="tech-inline__row">
+    <span class="tech-inline__label">Languages</span>
+    <span class="tech-inline__items">Python <span class="tech-dot">·</span> TypeScript <span class="tech-dot">·</span> JavaScript <span class="tech-dot">·</span> Java <span class="tech-dot">·</span> C <span class="tech-dot">·</span> C++ <span class="tech-dot">·</span> SQL <span class="tech-dot">·</span> Rust</span>
+  </div>
+  <div class="tech-inline__row">
+    <span class="tech-inline__label">Technologies</span>
+    <span class="tech-inline__items">React <span class="tech-dot">·</span> Node.js <span class="tech-dot">·</span> Express/Next.js <span class="tech-dot">·</span> FastAPI <span class="tech-dot">·</span> Git <span class="tech-dot">·</span> Postman <span class="tech-dot">·</span> Docker <span class="tech-dot">·</span> CUDA <span class="tech-dot">·</span> MongoDB</span>
+  </div>
+  <div class="tech-inline__row">
+    <span class="tech-inline__label">Libraries</span>
+    <span class="tech-inline__items">NumPy <span class="tech-dot">·</span> Pandas <span class="tech-dot">·</span> BeautifulSoup <span class="tech-dot">·</span> FAISS <span class="tech-dot">·</span> OpenCV <span class="tech-dot">·</span> MediaPipe <span class="tech-dot">·</span> Azure OpenAI</span>
+  </div>
+</div>
