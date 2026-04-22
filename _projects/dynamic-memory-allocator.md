@@ -1,15 +1,13 @@
 ---
 layout: archive
-title: 'LSM Storage Engine'
-excerpt: Log-structured merge-tree storage engine built in Rust with memtable, SSTables, bloom filters, WAL, and merge iterators.
-tag: Rust
-permalink: /projects/lsm-storage-engine
-date: 2026-01-4
+title: 'Dynamic Memory Allocator'
+excerpt: Memory allocator in C implementing segregated free lists, coalescing, and XOR-obfuscated boundary tags for efficient heap management. For prospective employers, please contact me directly to view the repository!
+tag: C
+permalink: /projects/dynamic-memory-allocator
+date: 2026-04-22
 author_profile: true
-github: https://github.com/t-wang1/mini-LSM
+github: https://github.com/t-wang1/dynamic-memory-allocator
 ---
-
-A [LSM-based storage engine](https://github.com/t-wang1/mini-LSM) implemented in Rust
 
 ### Overview
 
