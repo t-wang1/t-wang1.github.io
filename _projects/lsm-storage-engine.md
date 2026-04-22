@@ -2,7 +2,6 @@
 layout: archive
 title: 'LSM Storage Engine'
 excerpt: Log-structured merge-tree storage engine built in Rust with memtable, SSTables, bloom filters, WAL, and merge iterators.
-tag: Rust
 permalink: /projects/lsm-storage-engine
 date: 2026-01-4
 author_profile: true

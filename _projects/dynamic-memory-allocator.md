@@ -2,7 +2,6 @@
 layout: archive
 title: 'Dynamic Memory Allocator'
 excerpt: Memory allocator in C implementing segregated free lists, coalescing, and XOR-obfuscated boundary tags for efficient heap management. 
-tag: C
 permalink: /projects/dynamic-memory-allocator
 date: 2026-04-22
 author_profile: true
