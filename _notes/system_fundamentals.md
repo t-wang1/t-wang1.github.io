@@ -5,7 +5,7 @@ permalink: /notes/system_fundamentals
 date: 2023-09-02
 ---
 
-These notes for CSE 220: System Fundamentals 1 taught by Dr. Abid Malik
+These notes are for CSE 220: System Fundamentals 1 taught by Dr. Abid Malik
 
 ### Resources/Links
   * [Converting Between Decimal and Binary Floating Point Numbers](https://kyledewey.github.io/comp122-fall17/lecture/week_2/floating_point_interconversions.html)

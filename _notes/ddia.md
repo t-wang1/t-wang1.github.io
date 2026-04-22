@@ -5,7 +5,7 @@ permalink: /notes/ddia
 date: 2024-1-25
 ---
 
-These notes are _Designing Data-Intensive Applications_ by Martin Kleppmann
+These notes are for _Designing Data-Intensive Applications_ by Martin Kleppmann
 
 ### Resources/Links
 * [Textbook](https://github.com/ms2ag16/Books/blob/master/Designing%20Data-Intensive%20Applications%20-%20Martin%20Kleppmann.pdf)

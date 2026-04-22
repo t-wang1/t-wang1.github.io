@@ -178,9 +178,6 @@ collections:
   notes:
     output: true
     permalink: /:collection/:path/
-  resume:
-    output: true
-    permalink: /files/Tiffany_Wang_Resume.pdf
   projects:
     output: true
     permalink: /:collection/:path/
