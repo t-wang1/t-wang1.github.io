@@ -41,9 +41,7 @@ Aside from coding, you can usually find me hunting for the best lattes in NYC, e
   {% endfor %}
 </div>
 
-<hr> 
-
-<h2 class="section-heading">Technologies</h2>
+<h2 class="technologies-heading">Technologies</h2>
 <div class="tech-inline">
   <div class="tech-inline__row">
     <span class="tech-inline__label">Languages</span>
