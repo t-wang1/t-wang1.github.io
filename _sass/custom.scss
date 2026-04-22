@@ -132,7 +132,8 @@ hr {
   border-top: 0.5px solid #3a2d35;
 }
 
-.projects-heading {
+.projects-heading,
+.about-me-heading {
   font-family: 'Inter', -apple-system, sans-serif;
   font-weight: 300;
   font-size: 1.6rem;
@@ -181,6 +182,7 @@ hr {
   }
 
   &__tags {
+    color: #9a7d8a;
     display: flex;
     flex-wrap: wrap;
     gap: 6px;

@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-<h2 class= "about-me-heading">About Me</h2>
+<h2 class="about-me-heading">About Me</h2>
 
 I'm a senior at Stony Brook University studying Computer Science with a concentration in Artificial Intelligence and Data Science. I'm particularly interested in systems as they form the fundamental building blocks of our applications. I love understanding how things work under the hood and the elegant design decisions that go into building fast, reliable systems. 
 
